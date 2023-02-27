@@ -1,0 +1,46 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+@font-face {
+	font-family: Empire;
+	font-display: block;
+	src: url(./assets/empire-logofont.woff2);
+}
+
+.taurine{
+  font-family: Empire;
+  font-weight:500;
+  font-size: 3rem;
+}
+
+.jb-btn{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.table{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+body{
+  background: linear-gradient(-45deg, rgb(246, 86, 86), #e73c7e, rgb(100, 103, 245), rgb(57, 60, 242));
+	background-size: 400% 400%;
+	animation: gradient 9s ease infinite;
+	height: 100vh;
+  color:white;
+  overflow: hidden;
+  touch-action: none;
+  -webkit-user-select: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 50% 0%;
+	}
+}
